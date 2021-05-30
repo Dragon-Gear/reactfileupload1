@@ -1,0 +1,26 @@
+{
+  "name": "react_file_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "deploy": "gh-pages -d client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://Dragon-Gear.github.io/reactfileupload1",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4",
+    "gh-pages": "^3.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.11"
+  }
+}
